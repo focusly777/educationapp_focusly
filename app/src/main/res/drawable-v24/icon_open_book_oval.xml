@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="44"
+    android:viewportHeight="44"
+    android:width="44dp"
+    android:height="44dp">
+    <path
+        android:pathData="M44 22A22 22 0 0 1 0 22A22 22 0 0 1 44 22Z"
+        android:fillColor="#FFFFFF" />
+    <path
+        android:pathData="M42 22A20 20 0 0 1 2 22A20 20 0 0 1 42 22Z"
+        android:strokeColor="#FFBA00"
+        android:strokeWidth="4" />
+    <group
+        android:translateX="12.848"
+        android:translateY="12.5">
+        <path
+            android:pathData="M3.677 2.21c1.829 -0.366 4.235 -0.414 5.88 1.229a0.572 0.572 0 0 1 0.167 0.4v12.589a0.572 0.572 0 0 1 -0.977 0.4 4.766 4.766 0 0 0 -3.97 -1.053 12.282 12.282 0 0 0 -3.949 1.164 0.572 0.572 0 0 1 -0.828 -0.511V3.843a0.572 0.572 0 0 1 0.316 -0.512l0.256 0.512 -0.256 -0.511 0.015 -0.007Q0.462 3.26 0.589 3.2a14.824 14.824 0 0 1 3.089 -0.99zm-2.533 2v11.335a13.244 13.244 0 0 1 3.517 -0.9 6.639 6.639 0 0 1 3.92 0.641V4.093C7.364 3.03 5.57 3 3.9 3.333a13.68 13.68 0 0 0 -2.757 0.877z"
+            android:fillType="evenOdd"
+            android:fillColor="#FEBA00"
+            android:strokeColor="#FEBA00"
+            android:strokeWidth="1"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <group
+            android:translateX="-8.295">
+            <path
+                android:pathData="M22.922 2.21c-1.828 -0.366 -4.235 -0.414 -5.88 1.229a0.572 0.572 0 0 0 -0.167 0.4v12.589a0.572 0.572 0 0 0 0.977 0.4 4.766 4.766 0 0 1 3.97 -1.053 12.282 12.282 0 0 1 3.949 1.159 0.572 0.572 0 0 0 0.828 -0.511V3.843a0.572 0.572 0 0 0 -0.316 -0.512l-0.256 0.512 0.256 -0.512 -0.015 -0.007 -0.06 -0.024q-0.45 -0.21 -0.914 -0.389a14.827 14.827 0 0 0 -2.371 -0.7zm2.533 2v11.335a13.244 13.244 0 0 0 -3.517 -0.9 6.639 6.639 0 0 0 -3.92 0.641V4.093C19.235 3.03 21.029 3 22.7 3.333a13.678 13.678 0 0 1 2.757 0.877z"
+                android:fillType="evenOdd"
+                android:fillColor="#FEBA00"
+                android:strokeColor="#FEBA00"
+                android:strokeWidth="1"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round" />
+        </group>
+    </group>
+</vector>

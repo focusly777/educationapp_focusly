@@ -1,0 +1,161 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    signingConfigs {
+        release {
+            Properties properties = new Properties()
+            properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+            storeFile file(properties.getProperty('keyFilePath'))
+            storePassword = properties.getProperty('storePassword')
+            keyAlias = properties.getProperty('keyAlias')
+            keyPassword = properties.getProperty('keyPassword')
+        }
+        debug {
+            Properties properties = new Properties()
+            properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+            storeFile file(properties.getProperty('keyFilePath'))
+            storePassword = properties.getProperty('storePassword')
+            keyAlias = properties.getProperty('keyAlias')
+            keyPassword = properties.getProperty('keyPassword')
+        }
+    }
+
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "io.focusly.focuslyeduteacher"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+        buildConfigField "String", "AUTH_KEY", "\"${properties.getProperty('authKey')}\""
+        buildConfigField "String", "REQUEST_ID_TOKEN", "\"${properties.getProperty('requestIdToken')}\""
+
+        buildConfigField "String", "SEARCH_URL", "\"${properties.getProperty('searchUrl')}\""
+        buildConfigField "String", "CLIENT_ID", "\"${properties.getProperty('clientId')}\""
+        buildConfigField "String", "SECRET_ID", "\"${properties.getProperty('secretId')}\""
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // Room components
+    def room_version = "2.2.6"
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    androidTestImplementation "androidx.room:room-testing:$room_version"
+
+    // ViewModel Kotlin support
+    def lifecycle_version = '2.2.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    // permission
+    def ted_permission_version = "2.2.3"
+    implementation "gun0912.ted:tedpermission:$ted_permission_version"
+
+    // retrofit
+    def retrofit_version = "2.6.2"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofit_version"
+
+    // okHttp
+    def ok_http_version = "3.12.8"
+    implementation "com.squareup.okhttp3:okhttp:$ok_http_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$ok_http_version"
+
+    // SectorProgressView
+    implementation 'com.timqi.sectorprogressview:library:2.0.1'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'jp.wasabeef:glide-transformations:4.1.0'
+    implementation 'jp.co.cyberagent.android:gpuimage:2.0.1'
+
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:26.2.0')
+
+    // Firebase
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation 'com.google.firebase:firebase-storage-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-dynamic-links-ktx'
+    implementation 'com.google.firebase:firebase-functions-ktx'
+
+    //firebase ml vision
+    implementation 'com.google.firebase:firebase-ml-vision'
+    implementation 'com.google.firebase:firebase-ml-vision:24.1.0'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+    implementation 'com.google.firebase:firebase-ml-vision-barcode-model:16.1.2'
+
+    // custom countdownTimer
+    implementation 'com.ankushgrover:Hourglass:2.0.0'
+
+    // jsoup
+    implementation 'org.jsoup:jsoup:1.13.1'
+
+    // boilerpipe
+    implementation files('libs/boilerpipe.jar')
+    implementation files('libs/xerces-2.9.1.jar')
+
+    // docx4j4
+    // https://mvnrepository.com/artifact/org.docx4j/docx4j
+    implementation files('libs/awt-bastardised-17v8.jar')
+    implementation files('libs/jaxb-core-2.3.0-SNAPSHOT-ANDROID.jar')
+    implementation files('libs/jaxb-runtime-2.3.0-SNAPSHOT-ANDROID.jar')
+    implementation files('libs/istack-commons-runtime-3.0.4-SNAPSHOT.jar')
+    implementation files('libs/docx4j-6.1.1-SNAPSHOT-shaded-new.jar')
+    implementation files('libs/jsr173-1.0.jar')
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'
+    implementation group: 'com.fasterxml', name: 'aalto-xml', version: '1.0.0'
+
+    //lottie
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+}

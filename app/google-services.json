@@ -1,0 +1,171 @@
+{
+  "project_info": {
+    "project_number": "3039136007",
+    "firebase_url": "https://focuslypractice-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "focuslypractice",
+    "storage_bucket": "focuslypractice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3039136007:android:5593e29a2c9afcc7805da2",
+        "android_client_info": {
+          "package_name": "com.practice.updatefirebasecollectionname"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3039136007-02kkdd79bp754udjtibtfavfpgnckfi6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL-pbTH-MUspbHT1RPP27JRuboiWUUVMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3039136007-02kkdd79bp754udjtibtfavfpgnckfi6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "3039136007-duueo8271g239eo9hbc8ijlhmdsa5a7h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.IOS.FOCUSLY"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3039136007:android:fb1c572902d3c4e0805da2",
+        "android_client_info": {
+          "package_name": "com.shk.focuslyrealtimetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3039136007-rncmvde197f14tood7d410k2qc2vqvq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shk.focuslyrealtimetest",
+            "certificate_hash": "61c27cd73725a2f9b3c81ba649a5298234eeac67"
+          }
+        },
+        {
+          "client_id": "3039136007-02kkdd79bp754udjtibtfavfpgnckfi6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL-pbTH-MUspbHT1RPP27JRuboiWUUVMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3039136007-02kkdd79bp754udjtibtfavfpgnckfi6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "3039136007-duueo8271g239eo9hbc8ijlhmdsa5a7h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.IOS.FOCUSLY"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3039136007:android:53e72161bfe871d2805da2",
+        "android_client_info": {
+          "package_name": "com.shk.focuslytest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3039136007-0jsrp5uc0a9gbbrlcuvepvqmqhu8crdt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shk.focuslytest",
+            "certificate_hash": "61c27cd73725a2f9b3c81ba649a5298234eeac67"
+          }
+        },
+        {
+          "client_id": "3039136007-02kkdd79bp754udjtibtfavfpgnckfi6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL-pbTH-MUspbHT1RPP27JRuboiWUUVMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3039136007-02kkdd79bp754udjtibtfavfpgnckfi6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "3039136007-duueo8271g239eo9hbc8ijlhmdsa5a7h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.IOS.FOCUSLY"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3039136007:android:21412eca66c6ded3805da2",
+        "android_client_info": {
+          "package_name": "io.focusly.focuslyeduteacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3039136007-02kkdd79bp754udjtibtfavfpgnckfi6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL-pbTH-MUspbHT1RPP27JRuboiWUUVMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3039136007-02kkdd79bp754udjtibtfavfpgnckfi6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "3039136007-duueo8271g239eo9hbc8ijlhmdsa5a7h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.IOS.FOCUSLY"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -16,4 +16,7 @@
     <color name="classtime">#5468ff</color>
     <color name="mention">#f24aa5</color>
     <color name="exlpain">#b4b4b4</color>
+    <color name="lightgray">#dbdbdb</color>
+
+    <color name="mainbgcolor">#fafafa</color>
 </resources>

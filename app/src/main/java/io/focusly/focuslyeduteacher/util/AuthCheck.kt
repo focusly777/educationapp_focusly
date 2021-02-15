@@ -8,7 +8,7 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import io.focusly.focuslyedu.data.remote.source.UserData
+import io.focusly.focuslyeduteacher.data.remote.soruce.UserData
 import io.focusly.focuslyeduteacher.App.Companion.dLog
 
 
